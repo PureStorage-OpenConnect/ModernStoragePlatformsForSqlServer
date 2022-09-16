@@ -93,11 +93,11 @@ Follow the instructions in this section to launch the lab to use with this cours
 
     * If the Lab is not started, Power on the VMs using the button up top; this will start the VMs in the proper sequence.
 
-        <img src=../graphics/m1/1.1.2.png width="50%" height="50%" >
+        <img src=./graphics/m1/1.1.2.png width="50%" height="50%" >
 
 **<i>Tip - Click Fit to Window to size the virtual desktop to your browser window. </i>**
 
-<img src=../graphics/m1/1.1.png width="50%" height="50%" >
+<img src=./graphics/m1/1.1.png width="50%" height="50%" >
 
 <br />
 <br />
