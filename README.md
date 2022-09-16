@@ -7,6 +7,8 @@
 <br />
 <br />
 
+<img src=./graphics/titleslide.png width="90%" height="90%" >
+
 
 # About this Workshop
 
