@@ -149,11 +149,10 @@ You can access data in the s3 bucket and for a simple test, let's start our data
     WITH ( c1 int, c2 varchar(20) )
     AS   [Test1]
     ```
----
-
-## **Working with data on S3 compatible object storage with `OPENROWSET`**
 
 Let's do a slightly more complex example and join the data from s3 with a table on the database on our SQL Server instance. 
+
+- [ ] Execute this code on **Windows1** to query your CSV file using Polybase over s3.
 
     ```
     SELECT TOP 1000 * 
@@ -222,6 +221,12 @@ Now we can access the data in the CSV file on the FlashBlade like any other SQL 
     ```
 
 ---
+
+```
+    SELECT * 
+    FROM [HelloWorld] INNER JOIN TPCC100.dbo.customer ON c1 = customer.c_w_id
+```
+
 
 ## Activity Summary
 In this activity, you used the SQL Server Polybase feature to access external data on object storage using `EXTERNAL TABLE`.
