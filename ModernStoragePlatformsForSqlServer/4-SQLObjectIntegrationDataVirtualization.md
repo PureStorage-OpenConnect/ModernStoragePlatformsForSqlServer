@@ -220,13 +220,16 @@ Now we can access the data in the CSV file on the FlashBlade like any other SQL 
     FROM [HelloWorld];
     ```
 
----
+Now let's join the data from s3 compatible object storage with existing data on our SQL Server instance.
 
-```
+- [ ] Execute this code on **Windows1** to query the data in your `EXTERNAL TABLE` using Polybase over s3.
+
+    ```
     SELECT * 
     FROM [HelloWorld] INNER JOIN TPCC100.dbo.customer ON c1 = customer.c_w_id
-```
+    ```
 
+You just joined data from s3 compatible object storage with existing data. The syntax above abstracts aways the complexity of accessing the data on s3 using `EXTERNAL TABLE`.
 
 ## Activity Summary
 In this activity, you used the SQL Server Polybase feature to access external data on object storage using `EXTERNAL TABLE`.
