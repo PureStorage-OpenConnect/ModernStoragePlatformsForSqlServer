@@ -151,6 +151,23 @@ You can access data in the s3 bucket and for a simple test, let's start our data
     ```
 ---
 
+## **Working with data on S3 compatible object storage with `OPENROWSET`**
+
+Let's do a slightly more complex example and join the data from s3 with a table on the database on our SQL Server instance. 
+
+    ```
+    SELECT TOP 1000 * 
+    FROM OPENROWSET
+    (    BULK '/fbs3bucket/HelloWorld.csv'
+    ,    FORMAT       = 'CSV'
+    ,    DATA_SOURCE  = 's3_ds'
+    ) 
+    WITH ( c1 int, c2 varchar(20) ) 
+    AS   [Test1] INNER JOIN TPCC100.dbo.customer ON c1 = customer.c_w_id
+    ```
+
+This example highlights how you can have data on s3 compatible object storage and join that data with existing data on your SQL Server instance.
+
 ## Activity Summary
 In this activity, you used the SQL Server Polybase feature to access external data on object storage using `OPENROWSET`.
 
