@@ -8,7 +8,6 @@
 In this module, you will log into the administrative desktop to perform all of the activities in this course and learn the core administrative tools for monitoring the performance of storage platforms. 
 
 There are five activities in this module
-- [Logging into the lab](#11---logging-into-the-lab)
 - [Logging into the FlashArray Web Interface](#12---logging-into-the-flasharray-web-interface)
 - [Starting up a database workload](#13---starting-up-a-database-workload)
 - [Viewing Performance Metrics in FlashArray](#14---viewing-performance-metrics-in-flasharray)

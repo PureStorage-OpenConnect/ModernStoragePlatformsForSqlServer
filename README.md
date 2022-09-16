@@ -102,6 +102,19 @@ Follow the instructions in this section to launch the lab to use with this cours
 <br />
 <br />
 
+# Lab Information
+
+Your hands-on lab consists of two Windows Servers, each with SQL Server installed with the Polybase feature. Also in your lab is a FlashArray for the primary block storage device and storage subsystem for SQL Server instances. There is also a FlashBlade, for use as the primary external object storage device used by SQL Server.
+
+| Resource      | Description |
+| -----------   | ----------- |
+| **Windows1**  | **Primary administrator desktop and SQL Server Instance** |
+| Windows2      | SQL Server Instance |
+| FlashArray1   | Primary block storage device and storage subsystem for SQL Server instances |
+| FlashBlade1   | Primary external object storage used by SQL Server |
+
+<br />
+<br />
 # Next Steps
 
 Next, Continue to [Storage fundamentals for DBAs](./ModernStoragePlatformsForSqlServer/1-StorageFundamentalsForDBAs.md)
